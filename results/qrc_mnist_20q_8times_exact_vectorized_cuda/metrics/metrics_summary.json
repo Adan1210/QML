@@ -1,0 +1,72 @@
+{
+    "configuration": {
+        "seed": 42,
+        "gpu": "NVIDIA A16",
+        "n_qubits": 20,
+        "hilbert_dimension": 1048576,
+        "n_train": 9000,
+        "n_test": 1000,
+        "q_batch": 128,
+        "n_measurements": 8,
+        "measurement_dt_us": 0.5,
+        "trotter_steps_per_window": 8,
+        "total_trotter_steps": 64,
+        "n_shots": null,
+        "noise_sigma": 0.7,
+        "omega": 6.283185307179586,
+        "delta_global": 4.5,
+        "delta_scale": 9.0,
+        "atom_spacing_um": 10.0,
+        "c6": 5420000.0,
+        "qrc_train_time_s": 6928.907727848738,
+        "qrc_test_time_s": 770.2903972198255,
+        "qrc_total_time_s": 7699.198125068564,
+        "peak_vram_gb": 5.470183372497559
+    },
+    "mse": {
+        "noisy": {
+            "mean": 0.02137073688209057,
+            "std": 0.008184117265045643
+        },
+        "pca": {
+            "mean": 0.01431530062109232,
+            "std": 0.007753270212560892
+        },
+        "qrc": {
+            "mean": 0.015570883639156818,
+            "std": 0.008358858525753021
+        }
+    },
+    "ssim": {
+        "noisy": {
+            "mean": 0.8890843987464905,
+            "std": 0.03086494281888008
+        },
+        "pca": {
+            "mean": 0.8575055599212646,
+            "std": 0.07332081347703934
+        },
+        "qrc": {
+            "mean": 0.8418192863464355,
+            "std": 0.07982216030359268
+        }
+    },
+    "tenegrad": {
+        "clean": {
+            "mean": 141782.609375,
+            "std": 34391.328125
+        },
+        "noisy": {
+            "mean": 110378.2734375,
+            "std": 27567.400390625
+        },
+        "pca": {
+            "mean": 102818.6171875,
+            "std": 27038.8671875
+        },
+        "qrc": {
+            "mean": 99952.421875,
+            "std": 27426.322265625
+        }
+    }
+}
