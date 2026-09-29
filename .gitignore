@@ -1,0 +1,123 @@
+# ============================================================
+# Python
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+.ipynb_checkpoints/
+
+
+# ============================================================
+# Virtual environments / Conda
+# ============================================================
+
+.venv/
+venv/
+env/
+ENV/
+
+.conda/
+conda-env/
+
+
+# ============================================================
+# IDE / OS
+# ============================================================
+
+.vscode/
+.idea/
+
+.DS_Store
+Thumbs.db
+
+
+# ============================================================
+# MNIST / downloaded datasets
+# ============================================================
+
+data/
+
+
+# ============================================================
+# Runtime files
+# ============================================================
+
+*.log
+*.pid
+
+nohup.out
+
+
+# ============================================================
+# Temporary files
+# ============================================================
+
+*.tmp
+*.temp
+*.bak
+*.swp
+
+
+# ============================================================
+# PyTorch / model checkpoints
+#
+# Models can be regenerated from the experiment.
+# ============================================================
+
+*.pth
+*.ckpt
+
+# Ignore .pt files by default because QRC features and
+# predictions can become large.
+*.pt
+
+
+# ============================================================
+# QRC generated heavy data
+# ============================================================
+
+results/**/features/
+results/**/models/
+results/**/workers/
+results/**/logs/
+
+
+# ============================================================
+# KEEP SCIENTIFIC RESULTS
+# ============================================================
+
+# Keep the results directory itself.
+!results/
+
+# Keep experiment directories.
+!results/**/
+
+# Keep metric directories and their contents.
+!results/**/metrics/
+!results/**/metrics/*.json
+!results/**/metrics/*.csv
+
+# Keep figures and their contents.
+!results/**/figures/
+!results/**/figures/*.png
+!results/**/figures/*.jpg
+!results/**/figures/*.jpeg
+!results/**/figures/*.pdf
+!results/**/figures/*.svg
+
+# Keep the global scaling summary.
+!results/qrc_scaling_summary.csv
+
+
+# ============================================================
+# Optional scientific text outputs
+# ============================================================
+
+!results/**/*.txt
+!results/**/*.md
