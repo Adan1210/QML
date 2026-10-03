@@ -1,0 +1,25 @@
+Run folder: results/qrc_mnist_rydberg/runs/3x6_9um_pool1000-200_train1000_test200_f363cddf
+
+[17:57:36] === Step 1. Data: MNIST + speckle noise ===
+  Pools: 1000 train / 200 test images, speckle noise sigma = 0.7
+  Used:  1000 train / 200 test images
+
+[17:57:37] === Step 2. Encoding: PCA of the noisy images, one coordinate per atom ===
+  18 coordinates per image, PCA fitted on the 1000 clean training images, rescaled to [0, 1]
+
+[17:57:37] === Step 3. Quantum reservoir: 18 atoms (3 x 6), 1000 shots at 8 times ===
+  Cache results/qrc_mnist_rydberg/features/3x6_9um_a1bc344d: 0/1200 images already simulated
+  Simulating 1200 images on GPUs (0, 1, 2, 3), one image per GPU at a time
+    60/1200 images | 65 s elapsed | ~20.6 min left
+   120/1200 images | 2.0 min elapsed | ~18.3 min left
+   180/1200 images | 3.0 min elapsed | ~16.9 min left
+   240/1200 images | 3.9 min elapsed | ~15.7 min left
+   300/1200 images | 4.8 min elapsed | ~14.5 min left
+   360/1200 images | 5.8 min elapsed | ~13.5 min left
+   420/1200 images | 6.7 min elapsed | ~12.5 min left
+   480/1200 images | 7.7 min elapsed | ~11.5 min left
+   540/1200 images | 8.6 min elapsed | ~10.5 min left
+   600/1200 images | 9.6 min elapsed | ~9.6 min left
+   660/1200 images | 10.5 min elapsed | ~8.6 min left
+   720/1200 images | 11.4 min elapsed | ~7.6 min left
+   780/1200 images | 12.3 min elapsed | ~6.6 min left

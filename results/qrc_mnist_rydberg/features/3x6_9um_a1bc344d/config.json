@@ -1,0 +1,17 @@
+{
+    "pool_train": 1000,
+    "pool_test": 200,
+    "noise_sigma": 0.7,
+    "seed": 42,
+    "rows": 3,
+    "cols": 6,
+    "spacing": 9.0,
+    "rabi": 6.283185307179586,
+    "global_detuning": 4.5,
+    "local_detuning": 9.0,
+    "n_measurements": 8,
+    "readout_interval": 500,
+    "shots": 1000,
+    "dt": 250,
+    "krylov_tolerance": 1e-07
+}

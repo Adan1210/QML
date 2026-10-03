@@ -3,5 +3,8 @@
         {
             "path": "."
         }
-    ]
+    ],
+    "settings": {
+        "julia.environmentPath": "/home/lmorales/.julia/environments/ml"
+    }
 }
