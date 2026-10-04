@@ -1,0 +1,47 @@
+{
+    "n_train": 1000,
+    "n_test": 200,
+    "pool_train": 1000,
+    "pool_test": 200,
+    "noise_sigma": 0.7,
+    "seed": 42,
+    "atom_grids": {
+        "18": [
+            3,
+            6
+        ]
+    },
+    "spacing": 11.0,
+    "rabi": 6.283185307179586,
+    "global_detuning": 4.5,
+    "local_detuning": 9.0,
+    "n_measurements": 8,
+    "readout_interval": 500,
+    "shots": 1000,
+    "dt": {
+        "18": 250
+    },
+    "krylov_tolerance": 1e-07,
+    "validation_fraction": 0.1,
+    "ridge_penalties": [
+        0.001,
+        0.0031622776601683794,
+        0.01,
+        0.03162277660168379,
+        0.1,
+        0.31622776601683794,
+        1.0,
+        3.1622776601683795,
+        10.0,
+        31.622776601683793,
+        100.0,
+        316.2277660168379,
+        1000.0,
+        3162.2776601683795,
+        10000.0,
+        31622.776601683792,
+        100000.0
+    ],
+    "teng_sobel_normalized": true,
+    "teng_threshold": 0.0
+}

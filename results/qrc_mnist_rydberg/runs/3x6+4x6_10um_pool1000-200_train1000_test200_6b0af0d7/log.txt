@@ -1,0 +1,71 @@
+Run folder: results/qrc_mnist_rydberg/runs/3x6+4x6_10um_pool1000-200_train1000_test200_6b0af0d7
+
+[18:34:51] === Step 1. Data: MNIST + speckle noise ===
+  Pools: 1000 train / 200 test images, speckle noise sigma = 0.7
+  Used:  1000 train / 200 test images
+
+[18:34:51] === Step 2. Encoding: PCA of the noisy images, one coordinate per atom ===
+  24 coordinates per image, PCA fitted on the 1000 clean training images, rescaled to [0, 1]
+
+[18:34:51] === Step 3. Quantum reservoir: 18 atoms (3 x 6), 1000 shots at 8 times ===
+  Cache results/qrc_mnist_rydberg/features/3x6_10um_fbf87c4f: 1200/1200 images already simulated
+  PCA: 18 features per image
+  QRC: 1368 features per image
+
+[18:34:51] === Step 4. Ridge readout: 18 atoms ===
+  Penalty chosen among 17 values (1e-03 to 1e+05) by the MSE on 100 held-out training images
+  PCA: penalty 1e-03 | validation MSE 0.02380  (edge of the grid)
+  QRC: penalty 3e+02 | validation MSE 0.02301
+
+[18:34:51] === Step 5. Test metrics: 18 atoms (200 test images) ===
+  atoms  method               MSE            SSIM               TENG
+     18  PCA     0.0266 ± 0.0097   0.600 ± 0.087     902.2 ±  336.9
+     18  QRC     0.0261 ± 0.0109   0.570 ± 0.083    1082.3 ±  341.3
+
+[18:34:51] === Step 3. Quantum reservoir: 24 atoms (4 x 6), 1000 shots at 8 times ===
+  Cache results/qrc_mnist_rydberg/features/4x6_10um_e721a764: 0/1200 images already simulated
+  Simulating 1200 images on GPUs (0, 1, 2, 3), one image per GPU at a time
+    60/1200 images | 67.9 min elapsed | ~21.5 h left
+   120/1200 images | 2.3 h elapsed | ~20.4 h left
+   180/1200 images | 3.4 h elapsed | ~19.2 h left
+   240/1200 images | 4.5 h elapsed | ~18.1 h left
+   300/1200 images | 5.7 h elapsed | ~17.0 h left
+   360/1200 images | 6.8 h elapsed | ~15.8 h left
+   420/1200 images | 7.9 h elapsed | ~14.7 h left
+   480/1200 images | 9.0 h elapsed | ~13.6 h left
+   540/1200 images | 10.2 h elapsed | ~12.4 h left
+   600/1200 images | 11.3 h elapsed | ~11.3 h left
+   660/1200 images | 12.4 h elapsed | ~10.2 h left
+   720/1200 images | 13.6 h elapsed | ~9.0 h left
+   780/1200 images | 14.7 h elapsed | ~7.9 h left
+   840/1200 images | 15.8 h elapsed | ~6.8 h left
+   900/1200 images | 17.0 h elapsed | ~5.7 h left
+   960/1200 images | 18.1 h elapsed | ~4.5 h left
+  1020/1200 images | 19.2 h elapsed | ~3.4 h left
+  1080/1200 images | 20.3 h elapsed | ~2.3 h left
+  1140/1200 images | 21.5 h elapsed | ~67.9 min left
+  1200/1200 images | 22.6 h elapsed | ~0 s left
+  PCA: 24 features per image
+  QRC: 2400 features per image
+
+[17:11:52] === Step 4. Ridge readout: 24 atoms ===
+  Penalty chosen among 17 values (1e-03 to 1e+05) by the MSE on 100 held-out training images
+  PCA: penalty 1e-03 | validation MSE 0.02016  (edge of the grid)
+  QRC: penalty 1e+03 | validation MSE 0.02064
+
+[17:11:53] === Step 5. Test metrics: 24 atoms (200 test images) ===
+  atoms  method               MSE            SSIM               TENG
+     24  PCA     0.0228 ± 0.0082   0.632 ± 0.087    1012.7 ±  350.5
+     24  QRC     0.0232 ± 0.0092   0.606 ± 0.083    1062.7 ±  311.0
+
+[17:11:53] === Summary: mean ± std over the test images ===
+  atoms  method               MSE            SSIM               TENG
+      -  Clean   0.0000 ± 0.0000   1.000 ± 0.000    2175.4 ±  537.5
+      -  Noisy   0.0204 ± 0.0080   0.893 ± 0.029    1695.6 ±  426.2
+     18  PCA     0.0266 ± 0.0097   0.600 ± 0.087     902.2 ±  336.9
+     18  QRC     0.0261 ± 0.0109   0.570 ± 0.083    1082.3 ±  341.3
+     24  PCA     0.0228 ± 0.0082   0.632 ± 0.087    1012.7 ±  350.5
+     24  QRC     0.0232 ± 0.0092   0.606 ± 0.083    1062.7 ±  311.0
+
+  Saved in results/qrc_mnist_rydberg/runs/3x6+4x6_10um_pool1000-200_train1000_test200_6b0af0d7: log.txt, metrics/, figures/
+  Total time: 22.6 h
