@@ -1,0 +1,16 @@
+# Direct dependencies of the notebooks, pinned to the versions they were tested with.
+# Install with:  pip install -r requirements.txt
+
+# Neutral-atom pulse programming and local emulation (Pasqal)
+pulser-core==1.10.0
+pulser-simulation==1.10.0
+qutip==5.3.1
+
+# Numerics, data and plotting
+numpy==2.5.3
+scipy==1.18.1
+pandas==3.0.6
+matplotlib==3.11.2
+
+# Jupyter kernel so the notebook can run in this environment
+ipykernel==7.3.0

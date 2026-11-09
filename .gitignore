@@ -1,0 +1,27 @@
+# --- Data -----------------------------------------------------------------
+# Keep the data/ folder in the repo but not the files inside it.
+data/*
+!data/README.md
+
+# --- Python ---------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# --- Virtual environments -------------------------------------------------
+.venv/
+venv/
+env/
+
+# --- Jupyter --------------------------------------------------------------
+.ipynb_checkpoints/
+
+# --- Exported environment snapshots (see README) ------------------------
+requirements-lock.txt
+environment-lock.yml
+
+# --- OS and editors -------------------------------------------------------
+.DS_Store
+.vscode/
+.idea/
